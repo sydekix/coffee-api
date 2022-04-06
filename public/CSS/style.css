@@ -1,0 +1,25 @@
+.nav {
+    background-color: green;
+    margin: 0;
+}
+
+.nav-item {
+    text-decoration: none;
+    padding: 10px 0;
+    color: purple;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.coffee-div a {
+    text-decoration: none;
+    color: purple;
+}

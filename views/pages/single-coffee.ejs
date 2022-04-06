@@ -1,0 +1,28 @@
+<%- include('../partials/header'); %>
+
+    <main class="main container">
+        <div class="row">
+            <h2 class="col-12"><%= name %></h2>
+            <section class="section row">
+                <figure class="figure col-10">
+                    
+                    <figcaption><%= data.name %></figcaption>
+                    <figcaption>Description: <%= data.description %></figcaption>
+                    <figcaption>Ingredients: <%= data.ingredients %></figcaption>
+                </figure>
+                <aside class="aside col-2">
+                    <h3>Description</h3>
+                    <p class="single-item"><%= data.description %></p>
+                
+                    <h3>Ingredients</h3>
+                    <ul class="single-ul">
+                       <% data.ingredients.forEach(item => { %>
+                            <li class="single-item"><%= item %></li>
+                       <% }) %>
+                    </ul>
+                </aside>
+            </section>
+        </div>
+    </main>
+
+<%- include('../partials/footer'); %>
